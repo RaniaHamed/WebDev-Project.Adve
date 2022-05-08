@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Travel">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Rania Hamed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/CSS" href="mycss/style.css">
+
+<title>Adventure</title>
+
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo">Adventure</a>
+    <ul>
+       <li><a href="#" class="active">Home</a></li>
+       <li><a href="#">Book Now</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Contact Us</a></li>
+
+
+    </ul>
+
+</header>
+
+<section>
+  <h2 id="text"><span>It's time to make a new </span><br>Adventure</h2>
+  <img src="advimages/bird1.png" id="bird1">
+  <img src="advimages/bird2.png" id="bird2">
+  <img src="advimages/forest.png" id="forest">
+     <a href="#" id="butn">Discover </a>
+   <img src="advimages/rocks.png" id="rocks">
+   <img src="advimages/water.png" id="water">
+
+</section>
+
+<div class="typing">
+    <h2> Who We Are ?</h2>
+    <p> 
+        Adventure is a space will help you to spend your time perfect much as we can, we're here to short the way for you <br>
+        and to prevent your attention from getting distracted.
+        <br>
+        <br>
+        <br> Adventure started when we saw that traveling around the world is a dream of every on of us, and we are here to help you to achieve it
+    </p>
+</div>
+
+<script>
+      let text = document.getElementById('text');
+      let bird1 = document.getElementById('bird1');
+      let bird2 = document.getElementById('bird2');
+      let butn = document.getElementById('butn');
+      let rocks = document.getElementById('rocks');
+      let forest = document.getElementById('forest');
+      let water = document.getElementById('water');
+      let header = document.getElementById('header');
+ 
+        window.addEventListener('scroll', function()
+            {
+                  let value = window.scrollY;
+
+                    text.style.top = 50 + value * -0.5 + '%';
+                    bird1.style.top = value * -1.5 + 'px';
+                    bird1.style.left = value * 2 + 'px';
+                    bird2.style.top = value * -1.5 + 'px';
+                    bird2.style.left = value * -5 + 'px';
+                    butn.style.marginTop = value * 1.5 + 'px';
+                    rocks.style.top = value * -0.12 + 'px';
+                    forest.style.top = value * 0.25 + 'px';
+             
+           })
+</script>
+
+</body>
+
+</html>
